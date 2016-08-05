@@ -17,9 +17,9 @@ class FullTextIndex extends JavaHelper {
     }
     val nodes: Stream[Node] = db.index.forNodes(index).query(query).stream
 
-    val myFunction: java.util.function.Function[Node, SearchHit] = (node: Node) => new SearchHit(node)
+    val newFunction: java.util.function.Function[Node, SearchHit] = (node: Node) => new SearchHit(node)
     nodes.map {
-      myFunction
+      newFunction
     }
   }
 
