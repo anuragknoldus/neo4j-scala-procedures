@@ -16,5 +16,5 @@ There are two ways to run this project
 
     sbt clean compile package
 
-Now copy jar file from "$Template_Home/target/scala-2.12.0-M5" to "$Neo4j_Home/plugins/ folder" and restart the server.
+Now copy jar file from "$Template_Home/target/scala-2.12.0-M5" to "$Neo4j_Home/plugins/ " and restart the server.
 
